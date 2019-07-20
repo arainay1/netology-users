@@ -1,0 +1,29 @@
+@import "~@app/styles/colors";
+
+.textarea-container {
+    margin: 10px 0;
+    padding: 0;
+}
+
+.textarea {
+    flex-grow: 1;
+    width: 100%;
+    max-width: 350px;
+    min-width: 200px;
+    padding-left: .7em;
+    padding-right: .7em;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.textarea-label {
+    display: inline-block;
+    width: 100%;
+    max-width: 200px;
+    margin-right: 1em;
+
+    &__required {
+        color: $red;
+    }
+}

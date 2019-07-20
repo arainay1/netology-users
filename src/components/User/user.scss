@@ -1,0 +1,13 @@
+.user {
+
+    &__row {
+        display: flex;
+        align-items: baseline;
+        margin: 10px 0;
+    }
+
+    &__label {
+        min-width: 120px;
+        margin-right: 1em;
+    }
+}

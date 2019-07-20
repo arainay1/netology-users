@@ -1,0 +1,61 @@
+@import "~@app/styles/mixins";
+@import "~@app/styles/colors";
+
+.user-form {
+
+    &__header {
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__inputs {
+        margin: 24px 0;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        & > .input,
+        & > .textarea {
+            max-width: initial;
+        }
+
+        @include respond-to(handhelds) {
+            flex-direction: column;
+            align-items: baseline;
+        }
+    }
+
+    &__controls {
+        display: flex;
+        justify-content: flex-end;
+
+        & > .button {
+            margin-right: 1.2em;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    
+    &__submit {
+        background-color: $blue;
+        border-color: darken($blue, 15%);
+        color: $white;
+    }
+    
+    &__cancel {
+        background-color: darken($white, 5%);
+    }
+}

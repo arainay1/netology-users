@@ -1,0 +1,30 @@
+@import "~@app/styles/mixins";
+@import "~@app/styles/colors";
+
+.users {
+
+    &__table-headers {
+        @include respond-to(handhelds) {
+            display: none;
+        }
+    }
+
+    &__mobile-header {
+        display: none;
+    }
+
+    &__mobile {
+        display: none;
+
+        @include respond-to(handhelds) {
+            display: table-cell;
+            border: 1px solid $border-color;
+        }
+    }
+
+    &__screen {
+        @include respond-to(handhelds) {
+            display: none;
+        }
+    }
+}

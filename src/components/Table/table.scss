@@ -1,0 +1,42 @@
+@import "~@app/styles/colors";
+
+.data-table {
+    width: 100%;
+	border-collapse: collapse;
+
+    &__head {
+        border-top: 1px solid $border-color;
+        border-bottom: 1px solid darken($border-color, 25%);
+
+        & .data-table__row {
+            border-bottom: none;
+        }
+    }
+
+    &__body {
+        & .data-table__row:nth-child(2n) {
+            background-color: lighten($light-gray, 15%);
+        }
+
+        & .data-table__row {
+            cursor: pointer;
+
+            &:hover {
+                background-color: $light-yellow;
+            }
+        }
+    }
+
+    &__row {
+        border-bottom: 1px solid $border-color;
+    }
+
+    &__cell {
+		padding: 5px 30px;
+        border-right: 1px solid $border-color;
+
+        &:first-child {
+            border-left: 1px solid $border-color;
+        }
+	}
+}

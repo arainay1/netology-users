@@ -1,0 +1,18 @@
+.user-control {
+    display: flex;
+    margin-bottom: 30px;
+
+    &__button {
+        margin-right: 20px;
+        text-decoration: none;
+        box-sizing: border-box;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__modal {
+        width: 60%;
+    }
+}

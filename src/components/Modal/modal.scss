@@ -1,0 +1,22 @@
+@import "~@app/styles/colors";
+
+.substrate {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $black-half-opacity;
+}
+
+.modal {
+    &__content {
+        max-width: 800px;
+        padding: 1.5em;
+        background-color: $white;
+    }
+}

@@ -1,0 +1,10 @@
+$small: 500px;
+
+@mixin respond-to($media) {
+    @if $media == handhelds {
+        @media (max-width: $small) { @content; }
+    }
+    @else if $media == screens {
+        @media (min-width: $small + 1) { @content; }
+    }
+}
